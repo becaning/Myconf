@@ -36,8 +36,8 @@ filetype off " required! turn off
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle       "
                                                                             "
                                                                             "
-set rtp+=~/.vim/bundle/vundle/                                              " 
-call vundle#rc()                                                            " 
+set rtp+=~/.vim/bundle/vundle/                                              "
+call vundle#rc()                                                            "
                                                                             "
 " :BundleList          - list configured bundles                            "
 " :BundleInstall(!)    - install(update) bundles                            "
@@ -104,15 +104,38 @@ au FileType python let b:delimitMate_nesting_quotes = ['"']
 
 
 
+" 快速去行尾空格 [, + <Space>]
+Bundle 'bronson/vim-trailing-whitespace'
+map <leader><space> :FixWhitespace<cr>
 
 
+
+"################### 语言相关 ###################
+
+"###### Python #########
+
+" python fly check, 弥补syntastic只能打开和保存才检查语法的不足
+Bundle 'kevinw/pyflakes-vim'
+let g:pyflakes_use_quickfix = 0
+
+" for python.vim syntax highlight
+Bundle 'hdima/python-syntax'
+let python_highlight_all = 1
+
+
+"###### Jinja2 #########
+Bundle 'Glench/Vim-Jinja2-Syntax'
+
+
+"###### nginx #########
+Bundle 'evanmiller/nginx-vim-syntax'
 
 
 
 
 "-------NERDTree----------
 "配置NERDTree
-Bundle 'scrooloose/nerdtree'   
+Bundle 'scrooloose/nerdtree'
 map <leader>t :NERDTree<cr>
 "-------------------------
 
@@ -697,7 +720,7 @@ nnoremap <buffer> <F10> :exec '!python' shellescape(@%, 1)<cr>
 "--------------------------------------------------------------------------
 "   <选项设置>
 "--------------------------------------------------------------------------
-set nocompatible               "禁用 Vi 兼容模式 
+set nocompatible               "禁用 Vi 兼容模式
 syntax enable                  "语法检查
 "set cursorline                "设置游标
 set t_Co=256                   " 在终端启用256色

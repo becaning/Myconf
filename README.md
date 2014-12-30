@@ -1,5 +1,4 @@
-Myconf
-======
+About this Repo
+===============
 
-A collection of configuration files about my workspace.
--------------------------------------------------------
+####A collection of configuration files about my workspace.
