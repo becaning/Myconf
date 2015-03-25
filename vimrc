@@ -200,6 +200,7 @@ au Syntax * RainbowParenthesesLoadBraces
 
 
 
+Bundle "becaning/vimdoccn"
 
 
 
@@ -475,7 +476,7 @@ set formatoptions+=B
 " F1 废弃这个键,防止调出系统帮助
 " F2 行号开关，用于鼠标复制代码用
 " F3 显示可打印字符开关
-" F4 换行开关
+F4 换行开关
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
 
