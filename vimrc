@@ -74,8 +74,20 @@ let g:syntastic_python_checkers=['pyflakes'] " 使用pyflakes,速度比pylint快
 highlight SyntasticErrorSign guifg=white guibg=black
 
 
+"Bundle "Valloric/YouCompleteMe"
 
+Bundle "majutsushi/tagbar"
+nmap <F8> :TagbarToggle<CR>
 
+"===========================================
+"快速添加注释
+"[d] shift+v+方向键选中(默认当前行)
+"    -> ,cc      加上注释
+"    -> ,cu      解开注释
+"    -> ,c<space> 加上/解开注释
+"    -> ,cy      先复制再注解, p可以粘贴未注释前的代码
+Bundle "scrooloose/nerdcommenter"
+"===========================================
 
 
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
@@ -476,7 +488,7 @@ set formatoptions+=B
 " F1 废弃这个键,防止调出系统帮助
 " F2 行号开关，用于鼠标复制代码用
 " F3 显示可打印字符开关
-F4 换行开关
+" F4 换行开关
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
 

@@ -1,0 +1,34 @@
+############################################
+#   自定义(ba/z)shrc 用于初始化工作环境    #
+############################################
+
+echo "Hello world。。。"
+
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -la'
+
+
+#color for iTerm2
+LSCOLOR=1
+LSCOLORS=exfxbxdxcxegedabagacad
+
+
+
+#settings for pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+#virtualenvwrapper
+WORKON_HOME=~/.virtualenvs
+PROJECT_HOME=~/work
+
+
+
+#tmux与vim颜色问题
+
+alias tmux='tmux -2'
+
+
+
