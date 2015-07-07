@@ -31,8 +31,9 @@ PROJECT_HOME=~/work
 
 
 #tmux与vim颜色问题
-
 alias tmux='tmux -2'
 
 
-
+#settings for golang
+export GOPATH=/Users/becaning/work/go
+export PATH=$PATH:$GOPATH
