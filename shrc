@@ -2,7 +2,7 @@
 #   自定义(ba/z)shrc 用于初始化工作环境    #
 ############################################
 
-echo "Hello world。。。"
+echo "Open tmux.. pls!"
 
 alias la='ls -a'
 alias ll='ls -l'
@@ -13,10 +13,11 @@ alias lla='ls -la'
 LSCOLOR=1
 LSCOLORS=exfxbxdxcxegedabagacad
 
-export http_proxy=http://172.16.10.76:1984
-export https_proxy=http://172.16.10.76:1984
+# export http_proxy=http://172.16.10.76:1984
+# export https_proxy=http://172.16.10.76:1984
 
 export LS_COLORS='di=34;40:ln=34;40:so=31;40:pi=33;40:ex=32;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+
 
 
 #settings for pyenv
@@ -31,9 +32,14 @@ PROJECT_HOME=~/work
 
 
 #tmux与vim颜色问题
-alias tmux='tmux -2'
+# alias tmux='tmux -2'
 
 
 #settings for golang
 export GOPATH=/Users/becaning/work/go
 export PATH=$PATH:$GOPATH
+alias hserver='open http://localhost:8000 && python -m SimpleHTTPServer'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
