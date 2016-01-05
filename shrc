@@ -37,7 +37,9 @@ PROJECT_HOME=~/work
 
 #settings for golang
 export GOPATH=/Users/becaning/work/go
-export PATH=$PATH:$GOPATH
+export GOBIN=/Users/becaning/work/go/bin
+export PATH=$PATH:$GOBIN
+
 alias hserver='open http://localhost:8000 && python -m SimpleHTTPServer'
 
 export NVM_DIR="$HOME/.nvm"
